@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010886601242",
+    "project_id": "lineup-32c58",
+    "storage_bucket": "lineup-32c58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010886601242:android:9191d4ef14567842307fa3",
+        "android_client_info": {
+          "package_name": "com.example.lineup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR4hexTCexQrYEGxHhiYDTNmrk3M-lgcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010886601242:android:680c284b56e4299a307fa3",
+        "android_client_info": {
+          "package_name": "com.lineuptech.lineup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR4hexTCexQrYEGxHhiYDTNmrk3M-lgcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

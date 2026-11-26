@@ -1,0 +1,24 @@
+{
+  "firestore": { "rules": "firestore.rules", "indexes": "firestore.indexes.json" },
+  "functions": [{ "source": "functions", "codebase": "default", "ignore": ["node_modules"] }],
+  "hosting": [
+    {
+      "site": "lineup-app-32c58",
+      "public": "build/web",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [{ "source": "**", "destination": "/index.html" }],
+      "headers": [
+        { "source": "/@(index.html|flutter_service_worker.js|flutter_bootstrap.js|main.dart.js|version.json)", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+      ]
+    },
+    {
+      "site": "lineup-admin-32c58",
+      "public": "admin",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "headers": [
+        { "source": "**", "headers": [{ "key": "Cache-Control", "value": "no-cache" }, { "key": "X-Frame-Options", "value": "DENY" }, { "key": "X-Content-Type-Options", "value": "nosniff" }] }
+      ]
+    }
+  ],
+  "flutter": {"platforms":{"android":{"default":{"projectId":"lineup-32c58","appId":"1:1010886601242:android:680c284b56e4299a307fa3","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"lineup-32c58","configurations":{"android":"1:1010886601242:android:680c284b56e4299a307fa3","ios":"1:1010886601242:ios:fa119bb4639c429d307fa3","web":"1:1010886601242:web:281866364db8f544307fa3"}}}}}
+}
